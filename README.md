@@ -10,6 +10,10 @@
 
 An extensible DLNA DMR (Digital Media Renderer) implementation.
 
+## 🔑 Key Differences
+
+There already exists multiple DLNA implementations in Rust, like [crab-dlna](https://github.com/gabrielmagno/crab-dlna) etc. However, they all serve as the sending end (DMS or/and DMC), and I failed to find a decent implementation of the receiving end (DMR). So, I created one myself.
+
 ## 🤔 Cli or Lib?
 
 The `dlna-dmr` cli itself is a dummy DMR that only logs the received commands, without actually doing anything with them. It is perfect for debugging purposes, but to build a real DMR, refer to the [library documentation](https://docs.rs/dlna-dmr/latest/dlna_dmr/).
